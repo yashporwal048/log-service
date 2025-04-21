@@ -1,0 +1,19 @@
+{
+  "name": "log-micro-service",
+  "version": "1.0.0",
+  "main": "yes",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.17.1",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "kafkajs": "^2.2.4",
+    "pg": "^8.14.1"
+  }
+}
