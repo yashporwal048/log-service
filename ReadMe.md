@@ -50,15 +50,16 @@ Base URL - http://localhost:3000/api
 Endpoints
 Get Logs - 
 
--GET /logs
--Query logs from PostgreSQL or Elasticsearch.
--Add Logs
+- GET /logs
+- Query logs from PostgreSQL or Elasticsearch.
+- Add Logs
 
 POST- 
--/logs  
--Add a new log entry to Kafka.
+- /logs  
+- Add a new log entry to Kafka.
 
 ## Project Structure
+```
 Log-Microservice/
 ├── config/                 # Configuration files
 ├── consumers/              # Kafka consumers
@@ -69,14 +70,15 @@ Log-Microservice/
 ├── .env                    # Environment variables
 ├── docker-compose.yml      # Docker Compose configuration
 ├── server.js               # Main server file
-├── README.md 
+├── README.md               # Project documentation
+```
 
 ## How It Works
-Logs are sent to Kafka topics via producers.
-Kafka consumers process logs and store them in PostgreSQL and Elasticsearch.
-Logs can be queried via RESTful APIs.
+- Logs are sent to Kafka topics via producers.
+- Kafka consumers process logs and store them in PostgreSQL and Elasticsearch.
+- Logs can be queried via RESTful APIs.
 
 ## Troubleshooting
-Kafka Issues: Ensure Kafka is running and accessible.
-PostgreSQL Issues: Verify the DB_URL in .env.
-Elasticsearch Issues: Check the ELASTICSEARCH_URL in .env.
+- Kafka Issues: Ensure Kafka is running and accessible.
+- PostgreSQL Issues: Verify the DB_URL in .env.
+- Elasticsearch Issues: Check the ELASTICSEARCH_URL in .env.
